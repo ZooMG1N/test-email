@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "totShrift";
+  src: url("../fonts/ot_amyj_hrift-webfont.woff") format("woff");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+.email-container-center {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  z-index: 1;
+}
+
+.email-popup {
+  max-width: 500px;
+  background-color: rgba(138, 75, 250, 0.5);
+  position: absolute;
+  z-index: 2;
+  top: 85px;
+  bottom: 530px;
+  right: 0;
+  left: 52px;
+  display: none;
+}
+
+.email-popup-show {
+  display: block;
+}
+
+.email-header {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 36px;
+  color: #6f6f6f;
+  text-align: center;
+  background-color: #292929;
+}
+
+.email-header a {
+  color: #6f6f6f;
+}
+
+.email-main-block {
+  background-image: url("../img/email-main-block-bg.jpg");
+  background-position: top center;
+  background-size: cover;
+  background-color: #ffffff;
+}
+
+.email-main-block img {
+  display: inline-block;
+  width: 220px;
+  padding: 180px 0 41px;
+}
+
+.email-main-block span {
+  display: block;
+  font-family: "totShrift";
+  font-size: 27px;
+  color: #e3cc01;
+  text-align: center;
+  text-shadow: 0 0 5px black;
+  margin-top: -119px;
+  text-transform: uppercase;
+}
+
+.email-button {
+  display: inline-block;
+  font-family: "totShrift";
+  font-size: 1.375;
+  color: #ffffff;
+  text-decoration: none;
+  border: 2px solid #006700;
+  border-top: none;
+  border-radius: 30px;
+  outline: none;
+  background: linear-gradient(0deg, #1fac05, 5%, #21b605, #42ff01);
+  padding: 0 90px;
+  margin: 25px 0 15px;
+}
+
+.email-board {
+  background-image: url("../img/board.png");
+  background-position: top center;
+  background-size: cover;
+  max-width: 555px;
+  margin: 0 auto;
+}
+
+.email-board-description {
+  font-family: "totShrift";
+  font-size: 1.125;
+  line-height: 20px;
+  color: #f4d38a;
+  text-shadow: 0 0 10px brown;
+  padding-top: 175px;
+  padding-left: 60px;
+  padding-bottom: 56px;
+}
+
+.email-footer {
+  font-family: "Roboto";
+  font-size: 1rem;
+  margin: 0 auto;
+  max-width: 450px;
+}
+
+@media screen and (max-width: 479px) {
+  .email-board-description {
+    font-size: 0.73rem;
+    padding: 106px 10px 30px 26px;
+  }
+  .email-board-description br {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .email-board-description {
+    font-size: 0.835rem;
+    padding: 147px 52px 30px 90px;
+  }
+  .email-board-description br {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .email-board-description {
+    font-size: 1.125rem;
+    padding: 186px 52px 85px 90px;
+  }
+  .email-board-description br {
+    display: none;
+  }
+}
